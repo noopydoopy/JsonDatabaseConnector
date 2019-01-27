@@ -12,7 +12,7 @@ namespace JsonDatabaseConnector.Common
         static ConfigurationManager()
         {
             AppSetting = new ConfigurationBuilder()
-                    .SetBasePath(Directory.GetCurrentDirectory())
+                    //.SetBasePath(Directory.GetCurrentDirectory())
                     .AddJsonFile("appsettings.json")
                     .Build();
         }
